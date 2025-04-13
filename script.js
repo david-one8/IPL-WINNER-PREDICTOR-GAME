@@ -61,4 +61,13 @@ btn.addEventListener("click", () => {
   nameEl.textContent = randomTeam.name;
   logoEl.src = randomTeam.logo;
   card.style.background = randomTeam.color;
+
+   // 🎉 Confetti animation
+  confetti({
+    particleCount: 150,
+    spread: 100,
+    origin: { y: 0.6 },
+  });
 });
+
+
